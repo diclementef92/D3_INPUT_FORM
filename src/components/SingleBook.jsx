@@ -6,22 +6,16 @@ class SingleBook extends Component {
   };
 
   bookClicked(event) {
-    console.log(event.target.parentNode);
-    if (this.state.selected) {
-      this.setState({
-        selected: false,
-      });
-    } else {
-      this.setState({
-        selected: true,
-      });
-    }
+    console.dir(event.target.parentNode);
+    this.setState({
+      selected: !this.state.selected,
+    });
+    event.target.parentNode.classList.toggle("card-selected");
   }
 
   render() {
-    console.log(this.state.selected);
     return (
-      <div className="card m-2" style={{ borderColor: "red" }}>
+      <div className="card m-2">
         <img
           className="card-img-top h-50"
           src={this.props.book.img}

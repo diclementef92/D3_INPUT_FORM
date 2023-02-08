@@ -40,6 +40,6 @@
 .card {
   width: 18rem;
 }
-.card .card-selected {
+.card.card-selected {
   border: 1px solid blue;
 }
