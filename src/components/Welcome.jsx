@@ -2,7 +2,7 @@ import { Component } from "react";
 
 class Welcome extends Component {
   render() {
-    console.log(this.props.text);
+    // console.log(this.props.text);
     return (
       <div className="jumbotron">
         <h1 className="display-4">Benvenuto {this.props.text}!</h1>

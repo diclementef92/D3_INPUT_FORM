@@ -3,7 +3,7 @@ import { Nav } from "react-bootstrap";
 
 class MyNav extends Component {
   render() {
-    console.log(this.props.items);
+    // console.log(this.props.items);
     return (
       <Nav className="bg-light">
         {this.props.items.map((elem, index) => {

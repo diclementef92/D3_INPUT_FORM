@@ -31,7 +31,7 @@ class BookList extends Component {
           </Row>
         </Form>
         <Row>
-          <Col md={6}>
+          <Col className="d-flex flex-wrap justify-content-between">
             {this.props.books
               .filter((book) =>
                 book.title
@@ -39,7 +39,7 @@ class BookList extends Component {
                   .includes(this.state.textToSearch.toLowerCase())
               )
               .map((elem) => {
-                return <SingleBook book={elem} />;
+                return <SingleBook book={elem} key={`book-${elem.asin}`} />;
               })}
           </Col>
         </Row>
