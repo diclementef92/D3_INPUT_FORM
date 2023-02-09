@@ -5,7 +5,7 @@ class MyNav extends Component {
   render() {
     // console.log(this.props.items);
     return (
-      <Nav className="bg-light">
+      <Nav>
         {this.props.items.map((elem, index) => {
           return (
             <Nav.Item key={`navitem-${index}`}>

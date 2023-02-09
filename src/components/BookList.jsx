@@ -23,6 +23,7 @@ class BookList extends Component {
                   type="text"
                   name="search"
                   id="search"
+                  value={this.state.textToSearch} // evita worning in console
                   placeholder="Cerca libro"
                   onChange={(e) => this.saveTextToSearch(e.target.value)}
                 ></FormControl>

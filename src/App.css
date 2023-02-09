@@ -39,7 +39,15 @@
 
 .card {
   width: 18rem;
+  transition: all 400ms;
+}
+.card:hover {
+  transform: scale(1.06);
+}
+.card-img-top {
+  height: 18rem;
 }
 .card.card-selected {
   border: 1px solid blue;
+  background-color: azure;
 }
